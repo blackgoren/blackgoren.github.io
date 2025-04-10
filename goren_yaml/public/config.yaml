@@ -1,0 +1,25 @@
+name: Alex
+job: Software Engineer
+mbti: INFJ
+description: I am a software engineer from California. Welcome to browse my website and contact me at any time.
+email: MetaGPT@gmail.com
+phone: 199999999999
+links:
+  - link: https://discord.com
+    title: Join My Discord!
+    icon: fab fa-discord
+  - link: https://github.com
+    title: My Github Profile
+    icon: fab fa-github
+  - link: https://youtube.com
+    title: My Playlist and Tutorials
+    icon: fab fa-youtube
+  - link: https://twitch.tv
+    title: This is where I stream
+    icon: fab fa-twitch
+  - link: https://x.com
+    title: Find all my Tweets
+    icon: fab fa-twitter
+  - link: https://tiktok.com
+    title: tiktok
+    icon: fab fa-tiktok
