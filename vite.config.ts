@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 
 // Use environment variable to determine base URL
-const baseUrl = process.env.NODE_ENV === 'production' ? '/common_yaml/' : '/'
+const baseUrl = process.env.NODE_ENV === 'production' ? '/' : '/'
 
 export default defineConfig({
   base: baseUrl,
