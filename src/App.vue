@@ -43,12 +43,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, computed } from "vue";
-import CrunchbaseLogo from './assets/logos/CrunchbaseLogo.svg'
-import LinkedinLogo from './assets/logos/Linkedin.svg'
-import InstagramLogo from './assets/logos/Instagram.svg'
-import TwitterLogo from './assets/logos/Twitter.svg'
-import YoutubeLogo from './assets/logos/Youtube.svg'
-import GithubLogo from './assets/logos/GitHub.svg'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExternalLinkAlt, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
