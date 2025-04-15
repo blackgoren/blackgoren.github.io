@@ -79,7 +79,7 @@ const createRipple = (e: MouseEvent) => {
 };
 
 const avatarPath = computed(() => {
-  return `${import.meta.env.BASE_URL}assets/avatar.png`;
+  return 'assets/avatar.png';
 });
 
 const gradientStyle = ref({
@@ -99,37 +99,37 @@ const handleMouseMove = (e: MouseEvent) => {
 const socialLinks = [
   {
     title: 'Crunchbase',
-    icon: `${import.meta.env.BASE_URL}assets/logos/CrunchbaseLogo.svg`,
+    icon: 'assets/logos/CrunchbaseLogo.svg',
     link: 'https://www.crunchbase.com/',
     isPersonal: false
   },
   {
     title: 'LinkedIn',
-    icon: `${import.meta.env.BASE_URL}assets/logos/Linkedin.svg`,
+    icon: 'assets/logos/Linkedin.svg',
     link: 'https://www.linkedin.com/in/harun-g%C3%B6ren-b50109254/',
     isPersonal: true
   },
   {
     title: 'Instagram',
-    icon: `${import.meta.env.BASE_URL}assets/logos/Instagram.svg`,
+    icon: 'assets/logos/Instagram.svg',
     link: 'https://www.instagram.com/blackgoren/',
     isPersonal: true
   },
   {
     title: 'X (Twitter)',
-    icon: `${import.meta.env.BASE_URL}assets/logos/Twitter.svg`,
+    icon: 'assets/logos/Twitter.svg',
     link: 'https://twitter.com/',
     isPersonal: false
   },
   {
     title: 'YouTube',
-    icon: `${import.meta.env.BASE_URL}assets/logos/Youtube.svg`,
+    icon: 'assets/logos/Youtube.svg',
     link: 'https://www.youtube.com/',
     isPersonal: false
   },
   {
     title: 'GitHub',
-    icon: `${import.meta.env.BASE_URL}assets/logos/GitHub.svg`,
+    icon: 'assets/logos/GitHub.svg',
     link: 'https://github.com/',
     isPersonal: false
   }
