@@ -32,8 +32,8 @@
           <img :src="item.icon" :alt="item.title + ' ikonu'" class="mx-8px text-20px" loading="lazy" />
           <div class="linkTitle">{{ item.title }}</div>
           <div class="linkIcon">
-            <img v-if="item.isPersonal" src="./assets/logos/external-link.svg" alt="Dış bağlantı" class="icon-white" loading="lazy" />
-            <img v-else src="./assets/logos/hideSvgrepo.svg" alt="Gizli profil" class="icon-white" loading="lazy" />
+            <FontAwesomeIcon v-if="item.isPersonal" :icon="['fas', 'external-link-alt']" class="icon-white" />
+            <FontAwesomeIcon v-else :icon="['fas', 'eye-slash']" class="icon-white" />
           </div>
         </div>
       </nav>
@@ -49,6 +49,12 @@ import InstagramLogo from './assets/logos/Instagram.svg'
 import TwitterLogo from './assets/logos/Twitter.svg'
 import YoutubeLogo from './assets/logos/Youtube.svg'
 import GithubLogo from './assets/logos/GitHub.svg'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faExternalLinkAlt, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+// Sadece kullanılan ikonları ekle
+library.add(faExternalLinkAlt, faEyeSlash);
 
 // Function to open a new window when a link is clicked
 const openLink = (link: string) => {
@@ -73,7 +79,7 @@ const createRipple = (e: MouseEvent) => {
 };
 
 const avatarPath = computed(() => {
-  return new URL('./assets/avatar.png', import.meta.url).href;
+  return `${import.meta.env.BASE_URL}assets/avatar.png`;
 });
 
 const gradientStyle = ref({
@@ -93,44 +99,44 @@ const handleMouseMove = (e: MouseEvent) => {
 const socialLinks = [
   {
     title: 'Crunchbase',
-    icon: CrunchbaseLogo,
+    icon: `${import.meta.env.BASE_URL}assets/logos/CrunchbaseLogo.svg`,
     link: 'https://www.crunchbase.com/',
     isPersonal: false
   },
   {
     title: 'LinkedIn',
-    icon: LinkedinLogo,
+    icon: `${import.meta.env.BASE_URL}assets/logos/Linkedin.svg`,
     link: 'https://www.linkedin.com/in/harun-g%C3%B6ren-b50109254/',
     isPersonal: true
   },
   {
     title: 'Instagram',
-    icon: InstagramLogo,
+    icon: `${import.meta.env.BASE_URL}assets/logos/Instagram.svg`,
     link: 'https://www.instagram.com/blackgoren/',
     isPersonal: true
   },
   {
     title: 'X (Twitter)',
-    icon: TwitterLogo,
+    icon: `${import.meta.env.BASE_URL}assets/logos/Twitter.svg`,
     link: 'https://twitter.com/',
     isPersonal: false
   },
   {
     title: 'YouTube',
-    icon: YoutubeLogo,
+    icon: `${import.meta.env.BASE_URL}assets/logos/Youtube.svg`,
     link: 'https://www.youtube.com/',
     isPersonal: false
   },
   {
     title: 'GitHub',
-    icon: GithubLogo,
+    icon: `${import.meta.env.BASE_URL}assets/logos/GitHub.svg`,
     link: 'https://github.com/',
     isPersonal: false
   }
 ];
 
 onMounted(() => {
-  const cursor = document.querySelector('.cursor');
+  const cursor = document.querySelector('.cursor') as HTMLElement;
   
   if (cursor) {
     document.addEventListener('mousemove', (e) => {
