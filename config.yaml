@@ -1,0 +1,29 @@
+name: "blackgoren"
+job: "Co-Founder"
+mbti: "CEO"
+description: "Hi, I'm Harun GÖREN, a tech entrepreneur based in Turkey. I led teams on various innovative projects and continue to build tech-driven solutions that make a difference. If you'd like to stay updated on what I'm working on or follow my journey, you're in the right place."
+links:
+  - link: "https://www.crunchbase.com/"
+    title: "Crunchbase"
+    icon: "./assets/logos/CrunchbaseLogo.svg"
+    isPersonal: false
+  - link: "https://www.linkedin.com/in/harun-g%C3%B6ren-b50109254/"
+    title: "LinkedIn"
+    icon: "./assets/logos/Linkedin.svg"
+    isPersonal: true
+  - link: "https://www.instagram.com/blackgoren/"
+    title: "Instagram"
+    icon: "./assets/logos/Instagram.svg"
+    isPersonal: true
+  - link: "https://twitter.com/"
+    title: "X (Twitter)"
+    icon: "./assets/logos/Twitter.svg"
+    isPersonal: false
+  - link: "https://www.youtube.com/"
+    title: "YouTube"
+    icon: "./assets/logos/Youtube.svg"
+    isPersonal: false
+  - link: "https://github.com/"
+    title: "GitHub"
+    icon: "./assets/logos/GitHub.svg"
+    isPersonal: false
