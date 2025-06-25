@@ -80,7 +80,7 @@ export default function Profile({ avatar, name, bio }) {
           <div className="relative overflow-hidden flex items-center justify-center">
             <span className="text-base text-gray-300 font-medium tracking-wide">@blackgoren</span>
             {/* Meta Verified Badge */}
-            <img src="/images/verified.png" alt="Verified" className="w-4 h-4 ml-1.5 align-middle" />
+            <img src="/images/verified.png" alt="Verified" className="w-4 h-4 ml-1.5 align-middle" style={{ transform: 'translateY(1px)' }} />
           </div>
         </div>
 
