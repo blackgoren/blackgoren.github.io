@@ -68,7 +68,3 @@ Verileri düzenlemek için `src/utils/data.js` dosyasını güncelleyin:
 ## 🌐 GitHub Pages
 
 Bu proje GitHub Pages üzerinde otomatik olarak deploy edilir. Her `main` branch'e push yapıldığında otomatik olarak güncellenir.
-
-## 📄 Lisans
-
-MIT License
